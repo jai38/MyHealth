@@ -1,609 +1,155 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyHealth — Your Medications, Prescriptions & Health Records in One Place</title>
-    <meta name="description" content="Never miss a dose. Never lose a prescription. Smart AI OCR extraction, visual daily medication schedule rings, and an encrypted health records vault in one beautiful app." />
-    <meta name="keywords" content="medicine reminder, prescription tracker, health records, pill schedule, doctor visits, lab reports, medical timeline, HIPAA" />
-    <meta property="og:title" content="MyHealth — Your Medications & Health Records, Simplified" />
-    <meta property="og:description" content="Smart prescription scanner, visual daily medicine schedules, and verified medical timeline." />
-    <meta property="og:type" content="website" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/style.css" />
-  </head>
-  <body>
-    <!-- Ambient Radial Mesh Lighting Orbs -->
-    <div class="ambient-glow-coral"></div>
-    <div class="ambient-glow-mint"></div>
-    <div class="ambient-glow-cyan"></div>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayoreni · Your prescriptions and medicines, in one calm place</title>
+<meta name="description" content="Ayoreni reads your prescriptions, keeps your health records in order and shows what to take today. You check everything before it’s saved. In early testing.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F7FAFC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#07111F" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/plus-jakarta-sans-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!--
+  Ayoreni landing page (side track L). Design: boards L01 and L02 on the design canvas,
+  spec in screens.md "Side track L · Landing page". Static: no scripts, no tracking, no forms,
+  no download link. All paths are relative, so it works at jai38.github.io/MyHealth/ and at a
+  domain root. Every name and medicine on this page is synthetic sample data.
+-->
+<a class="skip" href="#main">Skip to content</a>
+<div class="meshes" aria-hidden="true">
+  <div class="mesh" style="width:520px;height:520px;right:-160px;top:-140px;background:var(--m2)"></div>
+  <div class="mesh" style="width:480px;height:480px;left:-220px;top:620px;background:var(--m1)"></div>
+  <div class="mesh" style="width:460px;height:460px;right:-200px;top:1800px;background:var(--m2)"></div>
+  <div class="mesh" style="width:460px;height:460px;left:-200px;top:2800px;background:var(--m1)"></div>
+</div>
 
-    <!-- Navigation Bar -->
-    <header class="container">
-      <nav class="navbar">
-        <a href="#" class="nav-brand">
-          <div class="brand-icon">💊</div>
-          <span class="brand-name">MyHealth</span>
-          <span class="brand-badge">PRO</span>
-        </a>
-        <ul class="nav-links">
-          <li><a href="#features" class="nav-link">Features</a></li>
-          <li><a href="#demo" class="nav-link">Interactive App</a></li>
-          <li><a href="#comparison" class="nav-link">Why MyHealth</a></li>
-          <li><a href="#simulator" class="nav-link">Daily Routines</a></li>
-          <li><a href="#security" class="nav-link">Privacy & Security</a></li>
-        </ul>
-        <a href="#waitlist" class="nav-cta">
-          <span>Get Early Access</span>
-          <span>⚡</span>
-        </a>
-      </nav>
-    </header>
+<div class="wrap">
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Ayoreni, back to top"><img src="assets/ayoreni-mark.svg" alt="" width="44" height="32">AYORENI</a>
+    <nav class="links" aria-label="Main">
+      <a class="hide" href="#how">How it works</a>
+      <a class="hide" href="#privacy">Privacy</a>
+      <a class="pill" href="#contact">Contact</a>
+    </nav>
+  </header>
+</div>
 
-    <!-- Hero Section -->
-    <section class="hero container">
-      <div class="hero-pill-announcement">
-        <span>✨</span>
-        <span>SMART PRESCRIPTION OCR • VISUAL SCHEDULES • 100% PRIVATE</span>
+<main id="main">
+<div class="wrap">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div>
+      <span class="tag"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l2.5 1.5"/></svg>In early testing</span>
+      <h1 id="hero-title">Your prescriptions and medicines, <em>in one calm place.</em></h1>
+      <p class="lead">Ayoreni reads your prescriptions, keeps your health records in order and shows what to take today. You check everything before it’s saved.</p>
+      <div class="ctas">
+        <a class="btn" href="#how">See How It Works</a>
+        <a class="btn alt" href="#contact">Contact Us</a>
       </div>
-
-      <h1 class="hero-title">
-        <span class="text-gradient-white">Never Miss a Dose.</span><br />
-        <span class="text-gradient-coral">Never Lose a Health Record.</span>
-      </h1>
-
-      <p class="hero-subhead">
-        From crumpled paper prescriptions and lab results to daily medicine schedules. The clean, modern health companion designed to make managing your daily care effortless.
-      </p>
-
-      <div class="hero-cta-group">
-        <a href="#waitlist" class="btn-primary">
-          <span>Get Started Free</span>
-          <span>⚡</span>
-        </a>
-        <a href="#demo" class="btn-secondary">
-          <span>Try Interactive App Demo</span>
-          <span>📱</span>
-        </a>
-      </div>
-
-      <div class="hero-trust-bar">
-        <div class="hero-trust-item">
-          <span>⭐️</span>
-          <span>Built for patients, families & proactive health</span>
-        </div>
-        <div class="hero-trust-item">
-          <span>🔒</span>
-          <span>HIPAA & DPDP Privacy Aligned</span>
-        </div>
-        <div class="hero-trust-item">
-          <span>🛡️</span>
-          <span>Zero Ads • Never Sold</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Interactive 3D Phone Showcase -->
-    <section id="demo" class="container">
-      <div class="showcase-wrapper">
-        <!-- Floating Glass Badge 1 (Top Left) -->
-        <div class="floating-badge badge-top-left">
-          <div class="floating-icon floating-icon-coral">📸</div>
-          <div>
-            <div class="floating-badge-title">Prescription Vision OCR</div>
-            <div class="floating-badge-desc">Instant extraction with zero typing</div>
-          </div>
-        </div>
-
-        <!-- Floating Glass Badge 2 (Top Right) -->
-        <div class="floating-badge badge-top-right">
-          <div class="floating-icon floating-icon-mint">⏱️</div>
-          <div>
-            <div class="floating-badge-title">Visual Adherence Ring</div>
-            <div class="floating-badge-desc">Clear countdown of today's doses</div>
-          </div>
-        </div>
-
-        <!-- Floating Glass Badge 3 (Bottom Left) -->
-        <div class="floating-badge badge-bottom-left">
-          <div class="floating-icon floating-icon-cyan">📋</div>
-          <div>
-            <div class="floating-badge-title">Verified Medical Vault</div>
-            <div class="floating-badge-desc">Encrypted timeline & 1-tap doctor PDF</div>
-          </div>
-        </div>
-
-        <!-- iPhone 16 Pro Device Mockup with Real Interactive App Inside -->
-        <div class="phone-mockup">
-          <div class="phone-screen">
-            <!-- Dynamic Island -->
-            <div class="dynamic-island">
-              <div class="island-camera"></div>
-              <div class="island-sensor"></div>
-            </div>
-
-            <!-- App Header -->
-            <div class="app-header">
-              <div>
-                <div class="app-date" id="live-date">TODAY</div>
-                <div class="app-greeting">Good Morning, Jai</div>
-              </div>
-              <div class="app-streak-badge" id="phone-streak-badge">
-                <span>⏱️</span>
-                <span id="phone-streak-count">7-DAY ADHERENCE</span>
-              </div>
-            </div>
-
-            <!-- Horizontal Weekday Carousel -->
-            <div class="app-week-strip">
-              <div class="app-day-col" onclick="selectDay(0, this)">
-                <span class="app-day-name">M</span>
-                <span class="app-day-dot"></span>
-              </div>
-              <div class="app-day-col" onclick="selectDay(1, this)">
-                <span class="app-day-name">T</span>
-                <span class="app-day-dot"></span>
-              </div>
-              <div class="app-day-col" onclick="selectDay(2, this)">
-                <span class="app-day-name">W</span>
-                <span class="app-day-dot"></span>
-              </div>
-              <div class="app-day-col" onclick="selectDay(3, this)">
-                <span class="app-day-name">T</span>
-                <span class="app-day-dot"></span>
-              </div>
-              <div class="app-day-col" onclick="selectDay(4, this)">
-                <span class="app-day-name">F</span>
-                <span class="app-day-dot"></span>
-              </div>
-              <div class="app-day-col active" onclick="selectDay(5, this)">
-                <span class="app-day-name">S</span>
-                <span class="app-day-dot"></span>
-              </div>
-              <div class="app-day-col" onclick="selectDay(6, this)">
-                <span class="app-day-name">S</span>
-                <span class="app-day-dot"></span>
-              </div>
-            </div>
-
-            <!-- 270-Degree Adherence Radial Gauge -->
-            <div class="app-dial-card">
-              <div class="app-dial-row">
-                <div class="app-dial-gauge">
-                  <svg width="90" height="90" style="transform: rotate(135deg);">
-                    <circle cx="45" cy="45" r="36" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="10" stroke-dasharray="169.64 226.19" stroke-linecap="round"></circle>
-                    <circle id="demo-dial-circle" cx="45" cy="45" r="36" fill="none" stroke="url(#coralGrad)" stroke-width="10" stroke-dasharray="169.64 226.19" stroke-dashoffset="42.41" stroke-linecap="round" style="transition: stroke-dashoffset 0.8s cubic-bezier(0.34, 1.56, 0.64, 1), stroke 0.5s ease;"></circle>
-                    <defs>
-                      <linearGradient id="coralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#FF5B22" />
-                        <stop offset="100%" stop-color="#FF8C42" />
-                      </linearGradient>
-                      <linearGradient id="mintGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#10B981" />
-                        <stop offset="100%" stop-color="#34D399" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                  <div class="app-dial-text">
-                    <div class="app-dial-pct" id="demo-pct-text">75%</div>
-                    <div class="app-dial-sub" id="demo-sub-text">1 LEFT</div>
-                  </div>
-                </div>
-
-                <div class="app-dial-info">
-                  <div class="app-dial-target">TODAY'S SCHEDULE</div>
-                  <div class="app-dial-status-title" id="demo-status-title">On Track ✓</div>
-                  <div class="app-dial-stats">
-                    <span class="app-dial-done" id="demo-done-text">3 Completed</span>
-                    <span>•</span>
-                    <span class="app-dial-left" id="demo-left-text">1 Remaining</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Hero Upcoming Dose Card (Interactive 1-Tap) -->
-            <div class="app-dose-card" id="demo-dose-card">
-              <div class="app-dose-top">
-                <span class="app-dose-tag">UPCOMING DOSE ⏰</span>
-                <span class="app-dose-time">09:00 AM</span>
-              </div>
-              <div class="app-dose-name">Metformin 500mg</div>
-              <div class="app-dose-meta">1 Tablet • Take with breakfast</div>
-              <div class="app-dose-actions">
-                <button class="app-btn-skip" onclick="simulateAction('skip')">Skip</button>
-                <button class="app-btn-snooze" onclick="simulateAction('snooze')">Snooze</button>
-                <button class="app-btn-taken" id="demo-taken-btn" onclick="simulateAction('take')">Taken ✓</button>
-              </div>
-            </div>
-
-            <!-- Bottom Navigation Bar inside Phone -->
-            <div class="app-nav-bar">
-              <div class="app-nav-item active">
-                <span class="app-nav-icon">💊</span>
-                <span>Today</span>
-              </div>
-              <div class="app-nav-item">
-                <span class="app-nav-icon">📋</span>
-                <span>Meds</span>
-              </div>
-              <div class="app-nav-item">
-                <span class="app-nav-icon">🩺</span>
-                <span>Timeline</span>
-              </div>
-              <div class="app-nav-item">
-                <span class="app-nav-icon">📄</span>
-                <span>Reports</span>
-              </div>
-            </div>
-
-            <!-- Confetti Celebration Overlay -->
-            <div class="celebration-overlay" id="celebration-modal">
-              <div class="celebration-icon">🎯</div>
-              <div class="celebration-title">ALL DOSES TAKEN! ✓</div>
-              <div class="celebration-sub">100% adherence logged for today. Keep up the great consistency!</div>
-              <button class="celebration-reset" onclick="resetDemo()">Reset Demo ↺</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Comparison: 2006 Old Way vs 2026 MyHealth Way -->
-    <section id="comparison" class="comparison-section container">
-      <div class="section-tag">THE REAL DIFFERENCE</div>
-      <h2 class="section-heading">Why Healthcare Apps Need a Redesign</h2>
-      <p class="section-description">
-        Healthcare software was built for hospitals and billing, not for real people. MyHealth brings the polish and clarity of modern personal software to your daily care.
-      </p>
-
-      <div class="comparison-grid">
-        <!-- Old Way -->
-        <div class="comparison-card old-way">
-          <div class="card-badge-header">⚠️ THE OLD WAY (2006)</div>
-          <h3 class="comparison-card-title">Scattered & Frustrating</h3>
-          <ul class="comparison-list">
-            <li class="comparison-item">
-              <div class="comparison-bullet">✕</div>
-              <div><strong>Paper Prescriptions:</strong> Doctor slips that get lost in kitchen drawers or damaged in bags.</div>
-            </li>
-            <li class="comparison-item">
-              <div class="comparison-bullet">✕</div>
-              <div><strong>Missed Evening Doses:</strong> Generic phone alarms that you swipe away and immediately forget.</div>
-            </li>
-            <li class="comparison-item">
-              <div class="comparison-bullet">✕</div>
-              <div><strong>Scary Medical Jargon:</strong> Cryptic lab PDFs with confusing abbreviations that induce panic.</div>
-            </li>
-            <li class="comparison-item">
-              <div class="comparison-bullet">✕</div>
-              <div><strong>Unprepared Doctor Consults:</strong> Struggling to remember what medications or tests you took 3 months ago.</div>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Pro Way -->
-        <div class="comparison-card pro-way">
-          <div class="card-badge-header">💊 THE MYHEALTH WAY (2026)</div>
-          <h3 class="comparison-card-title">Clear, Calm & Effortless</h3>
-          <ul class="comparison-list">
-            <li class="comparison-item">
-              <div class="comparison-bullet">✓</div>
-              <div><strong>Instant Camera OCR:</strong> Point your phone at any paper prescription. Automatic extraction of names, doses & schedules.</div>
-            </li>
-            <li class="comparison-item">
-              <div class="comparison-bullet">✓</div>
-              <div><strong>Visual Schedule Rings:</strong> Clean progress dials that show exactly what’s left in your day with 1-tap confirmation.</div>
-            </li>
-            <li class="comparison-item">
-              <div class="comparison-bullet">✓</div>
-              <div><strong>Plain-English Records:</strong> Medical timeline that organizes your diagnoses, medications, and visits chronologically.</div>
-            </li>
-            <li class="comparison-item">
-              <div class="comparison-bullet">✓</div>
-              <div><strong>1-Tap Doctor PDF:</strong> A certified, printable health summary ready for your physician in 5 seconds.</div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Four Pillar Features Grid -->
-    <section id="features" class="features-section container">
-      <div class="section-tag">CORE CAPABILITIES</div>
-      <h2 class="section-heading">Everything You Need To Stay On Track</h2>
-      <p class="section-description">
-        Designed with elegant glass aesthetics, soothing feedback, and zero-knowledge privacy that protects your sensitive health data.
-      </p>
-
-      <div class="features-grid">
-        <!-- Feature 1 -->
-        <div class="feature-card">
-          <div class="feature-icon-wrapper icon-coral">📸</div>
-          <h3 class="feature-title">Smart Prescription Scanner</h3>
-          <p class="feature-desc">
-            Point your camera at doctor handwriting, syrup bottles, or blister packs. Our OCR engine extracts medicine names, strengths, and frequencies to set reminders with zero manual typing.
-          </p>
-          <div class="feature-pill-tag">⚡ Automated OCR Extraction</div>
-        </div>
-
-        <!-- Feature 2 -->
-        <div class="feature-card">
-          <div class="feature-icon-wrapper icon-mint">⏱️</div>
-          <h3 class="feature-title">Visual Medication Schedule</h3>
-          <p class="feature-desc">
-            Clean countdown dials show what’s scheduled morning, noon, and night. 1-tap logging with snooze reminders ensures you never miss a dose, even on busy days.
-          </p>
-          <div class="feature-pill-tag">⚡ 1-Tap Dose Confirmation</div>
-        </div>
-
-        <!-- Feature 3 -->
-        <div class="feature-card">
-          <div class="feature-icon-wrapper icon-cyan">📋</div>
-          <h3 class="feature-title">Chronological Health Timeline</h3>
-          <p class="feature-desc">
-            All your prescriptions, clinic visits, and diagnostic reports organized in one chronological timeline. Filter by doctor, clinic, or condition anytime.
-          </p>
-          <div class="feature-pill-tag">⚡ Complete Health History</div>
-        </div>
-
-        <!-- Feature 4 -->
-        <div class="feature-card">
-          <div class="feature-icon-wrapper icon-gold">🩺</div>
-          <h3 class="feature-title">1-Tap Doctor Summary</h3>
-          <p class="feature-desc">
-            Walk into any consultation prepared. Generate a certified, timestamped clinical PDF that presents your complete medication history and adherence record clearly.
-          </p>
-          <div class="feature-pill-tag">⚡ Physician-Ready Export</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Daily Medication Routine Simulator -->
-    <section id="simulator" class="simulator-section container">
-      <div class="section-tag">DAILY ROUTINE PLANNER</div>
-      <h2 class="section-heading">Customized for Every Medicine & Supplement</h2>
-      <p class="section-description">
-        Whether you manage chronic prescriptions, seasonal treatments, or daily vitamins, MyHealth organizes your timing seamlessly.
-      </p>
-
-      <div class="simulator-card">
-        <div class="simulator-tabs">
-          <button class="sim-tab-btn active" onclick="switchProtocol('morning', this)">Morning Schedule ☀️</button>
-          <button class="sim-tab-btn" onclick="switchProtocol('afternoon', this)">Afternoon 🌤️</button>
-          <button class="sim-tab-btn" onclick="switchProtocol('night', this)">Evening & Night 🌙</button>
-        </div>
-
-        <div class="sim-display-grid" id="protocol-cards">
-          <!-- Populated by JavaScript -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Security & Privacy Section -->
-    <section id="security" class="security-section container">
-      <div class="security-card">
-        <div class="security-icon-large">🛡️</div>
-        <div>
-          <h3 class="security-title">Your Health Data Stays Yours. Forever.</h3>
-          <p class="security-desc">
-            We adhere strictly to HIPAA privacy standards and India's Digital Personal Data Protection Act. We do not sell your health history to data brokers, insurance providers, or advertising networks. Ever.
-          </p>
-          <div class="security-badges-row">
-            <span class="sec-badge">🔒 AES-256 Cloud Encryption</span>
-            <span class="sec-badge">🛡️ HIPAA Privacy Aligned</span>
-            <span class="sec-badge">🚫 Zero Ad Tracking</span>
-            <span class="sec-badge">📄 Instant Data Export</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action & Waitlist Form -->
-    <section id="waitlist" class="cta-banner container">
-      <div class="cta-box">
-        <div class="hero-pill-announcement" style="margin-bottom: 16px;">
-          <span>⚡</span>
-          <span>LIMITED ACCESS BETA</span>
-        </div>
-        <h2 class="cta-title">Ready To Simplify Your Healthcare?</h2>
-        <p class="cta-sub">
-          Join thousands of patients and proactive individuals keeping their medications and records organized.
-        </p>
-
-        <form class="waitlist-form" onsubmit="handleWaitlistSubmit(event)">
-          <input
-            type="email"
-            class="waitlist-input"
-            id="waitlist-email"
-            placeholder="Enter your email address..."
-            required
-          />
-          <button type="submit" class="btn-primary">
-            <span>Get Early Access</span>
-            <span>⚡</span>
-          </button>
-        </form>
-
-        <div class="waitlist-success" id="waitlist-success-msg">
-          🎉 You're on the early access list! Check your inbox for your invitation.
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer container">
-      <div class="footer-content">
-        <div>
-          <div style="font-weight: 800; color: #FFFFFF; font-size: 16px; margin-bottom: 4px;">MyHealth</div>
-          <div>© 2026 MyHealth Technologies. All rights reserved.</div>
-        </div>
-        <ul class="footer-links">
-          <li><a href="javascript:void(0)" onclick="openLegalModal('terms')" class="footer-link">Terms of Service</a></li>
-          <li><a href="javascript:void(0)" onclick="openLegalModal('privacy')" class="footer-link">Privacy Policy</a></li>
-          <li><a href="javascript:void(0)" onclick="openLegalModal('hipaa')" class="footer-link">HIPAA Transparency</a></li>
-        </ul>
-      </div>
-    </footer>
-
-    <!-- Legal Terms & Privacy Modal -->
-    <div class="legal-modal-backdrop" id="legal-modal">
-      <div class="legal-modal-content">
-        <button class="legal-close-btn" onclick="closeLegalModal()">✕</button>
-        <h3 class="legal-modal-title" id="legal-modal-heading">Terms of Service & Privacy</h3>
-        <div id="legal-modal-body" style="line-height: 1.7;">
-          <!-- Loaded dynamically -->
-        </div>
-      </div>
+      <p class="fine">Not in the app stores yet. A small group is testing an early Android version.</p>
     </div>
 
-    <!-- Interactive Scripts -->
-    <script>
-      // 1. Live Date string
-      const now = new Date();
-      document.getElementById('live-date').innerText = now.toLocaleDateString('en-US', {
-        weekday: 'short',
-        month: 'short',
-        day: 'numeric'
-      }).toUpperCase();
-
-      // 2. Interactive Phone Simulation
-      let isDoseTaken = false;
-      const arcLength = 169.64;
-
-      function simulateAction(action) {
-        if (action === 'take') {
-          isDoseTaken = true;
-          // Animate circle to 100%
-          const circle = document.getElementById('demo-dial-circle');
-          circle.style.strokeDashoffset = '0';
-          circle.setAttribute('stroke', 'url(#mintGrad)');
-
-          // Update texts
-          document.getElementById('demo-pct-text').innerText = '100%';
-          document.getElementById('demo-sub-text').innerText = 'ALL DONE!';
-          document.getElementById('demo-status-title').innerText = 'All Doses Taken ✓';
-          document.getElementById('demo-done-text').innerText = '4 Completed';
-          document.getElementById('demo-left-text').innerText = '0 Left';
-          document.getElementById('phone-streak-count').innerText = '8-DAY ADHERENCE';
-
-          // Show celebration modal
-          setTimeout(() => {
-            document.getElementById('celebration-modal').classList.add('active');
-          }, 400);
-        } else if (action === 'snooze') {
-          alert('⏰ Dose snoozed for 15 minutes! Reminder scheduled.');
-        } else if (action === 'skip') {
-          alert('Dose recorded as skipped for today.');
-        }
-      }
-
-      function resetDemo() {
-        isDoseTaken = false;
-        const circle = document.getElementById('demo-dial-circle');
-        circle.style.strokeDashoffset = '42.41';
-        circle.setAttribute('stroke', 'url(#coralGrad)');
-
-        document.getElementById('demo-pct-text').innerText = '75%';
-        document.getElementById('demo-sub-text').innerText = '1 LEFT';
-        document.getElementById('demo-status-title').innerText = 'On Track ✓';
-        document.getElementById('demo-done-text').innerText = '3 Completed';
-        document.getElementById('demo-left-text').innerText = '1 Remaining';
-        document.getElementById('phone-streak-count').innerText = '7-DAY ADHERENCE';
-
-        document.getElementById('celebration-modal').classList.remove('active');
-      }
-
-      function selectDay(index, el) {
-        document.querySelectorAll('.app-day-col').forEach(c => c.classList.remove('active'));
-        el.classList.add('active');
-      }
-
-      // 3. Daily Routine Planner Data (Medications & Prescriptions)
-      const protocols = {
-        morning: [
-          { time: '08:00 AM', name: 'Metformin 500mg', dose: '1 Tablet • With Breakfast' },
-          { time: '08:30 AM', name: 'Atorvastatin 20mg', dose: '1 Tablet • Daily' },
-          { time: '09:00 AM', name: 'Vitamin D3 2000 IU', dose: '1 Softgel • With Water' }
-        ],
-        afternoon: [
-          { time: '01:00 PM', name: 'Probiotic Multi-Strain', dose: '1 Capsule • With Lunch' },
-          { time: '01:30 PM', name: 'Omega-3 Fish Oil', dose: '1000mg • 1 Softgel' },
-          { time: '02:00 PM', name: 'Hydration Electrolytes', dose: '1 Packet with 500ml water' }
-        ],
-        night: [
-          { time: '09:00 PM', name: 'Magnesium Glycinate', dose: '200mg • 1 Capsule' },
-          { time: '09:30 PM', name: 'Zinc Picolinate 15mg', dose: '1 Tablet' },
-          { time: '10:00 PM', name: 'Melatonin (As Needed)', dose: '2.5mg • 30 mins before bed' }
-        ]
-      };
-
-      function renderProtocol(type) {
-        const items = protocols[type] || protocols.morning;
-        const container = document.getElementById('protocol-cards');
-        container.innerHTML = items.map(item => `
-          <div class="sim-pill-card">
-            <div class="sim-pill-time">${item.time}</div>
-            <div class="sim-pill-name">${item.name}</div>
-            <div class="sim-pill-dose">${item.dose}</div>
+    <div class="stage">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="ph" role="img" aria-label="The Ayoreni Today screen, with sample medicines">
+        <div class="scr" aria-hidden="true">
+          <div class="isl"></div>
+          <div class="shd"><div class="sb"><img src="assets/ayoreni-mark.svg" alt="" width="28" height="20">AYORENI</div></div>
+          <p class="sg">Good afternoon, Asha</p>
+          <p class="ss">Stay on track with your health today.</p>
+          <div class="shero">
+            <div><p class="sov">Today’s Medications</p><p class="snum">2 of 4 taken</p><p class="snx">Next: Testmed B · 1:00 PM</p></div>
+            <svg width="56" height="56" viewBox="0 0 96 96"><circle cx="48" cy="48" r="39" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="11"/><circle cx="48" cy="48" r="39" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-dasharray="122.5 245" transform="rotate(-90 48 48)"/></svg>
           </div>
-        `).join('');
-      }
+          <p class="sgrp">Morning</p>
+          <div class="scd">
+            <div class="srow"><div class="smi mb"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="9" width="18" height="7" rx="3.5" transform="rotate(-45 12 12.5)"/></svg></div><div class="sx"><p class="sn">Testmed A</p><p class="sd">500 mg · Tablet · 8:00 AM</p></div><span class="ch c-tk">✓ Taken</span></div>
+            <div class="srow"><div class="smi ms"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c4 4 6 7 6 10a6 6 0 01-12 0c0-3 2-6 6-10z"/></svg></div><div class="sx"><p class="sn">Testvit D</p><p class="sd">1000 IU · 9:00 AM</p></div><span class="ch c-nc">? Not confirmed</span></div>
+          </div>
+          <p class="sgrp">Afternoon</p>
+          <div class="scd">
+            <div class="srow"><div class="smi mb"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="9" width="18" height="7" rx="3.5" transform="rotate(-45 12 12.5)"/></svg></div><div class="sx"><p class="sn">Testmed B</p><p class="sd">10 mg · Tablet · 1:00 PM</p></div><span class="ch c-due">● Due now</span></div>
+            <div class="smt"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Mark as Taken</div>
+          </div>
+          <div class="stab"><span class="a"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg>Today</span><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h9l4 4v14H6z"/></svg>Records</span><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="9" width="18" height="7" rx="3.5" transform="rotate(-45 12 12.5)"/></svg>Medications</span><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg>Profile</span></div>
+        </div>
+      </div>
+      <p class="ex">Sample data. Not real medicines.</p>
+    </div>
+  </section>
+</div>
 
-      function switchProtocol(type, el) {
-        document.querySelectorAll('.sim-tab-btn').forEach(b => b.classList.remove('active'));
-        el.classList.add('active');
-        renderProtocol(type);
-      }
-      renderProtocol('morning');
+<section class="sec" id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <p class="ov">How it works</p>
+    <h2 id="how-title">From a paper prescription to today’s list</h2>
+    <p class="sl">Three steps, and you stay in charge of each one.</p>
+    <ol class="g3" role="list" style="list-style:none;padding:0">
+      <li class="card"><span class="num" aria-hidden="true">1</span><h3 class="ct">Snap a prescription</h3><p class="cb">Take a photo of your prescription, or upload one you already have.</p></li>
+      <li class="card"><span class="num" aria-hidden="true">2</span><h3 class="ct">Check what it read</h3><p class="cb">Ayoreni drafts the medicines and doctor details for you. <b>Nothing is saved as fact until you confirm it.</b></p></li>
+      <li class="card"><span class="num" aria-hidden="true">3</span><h3 class="ct">See today’s medicines</h3><p class="cb">Today shows what’s due now and what’s done. You mark each dose taken yourself.</p></li>
+    </ol>
+  </div>
+</section>
 
-      // 4. Waitlist Form Handler
-      function handleWaitlistSubmit(e) {
-        e.preventDefault();
-        const email = document.getElementById('waitlist-email').value;
-        if (email) {
-          document.getElementById('waitlist-email').value = '';
-          document.getElementById('waitlist-success-msg').style.display = 'block';
-        }
-      }
+<section class="sec tight" aria-labelledby="now-title">
+  <div class="wrap">
+    <p class="ov">In the app now</p>
+    <h2 id="now-title">Three places for everything</h2>
+    <div class="g3">
+      <div class="card"><div class="ic mb"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg></div><h3 class="ct">Today</h3><p class="cb">What’s due now, what you’ve taken, and any dose you haven’t confirmed yet.</p></div>
+      <div class="card"><div class="ic mb"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h7"/></svg></div><h3 class="ct">Records</h3><p class="cb">Your prescriptions and reports on one timeline, with a PDF summary you can show your doctor.</p></div>
+      <div class="card"><div class="ic ms"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="9" width="18" height="7" rx="3.5" transform="rotate(-45 12 12.5)"/><path d="M9.5 10l4.5 4.5"/></svg></div><h3 class="ct">Medications</h3><p class="cb">Each medicine with where it came from, how to take it and its history.</p></div>
+    </div>
+  </div>
+</section>
 
-      // 5. Legal Modal
-      const legalTexts = {
-        terms: `
-          <h4>1. Acceptance of Terms</h4>
-          <p>By creating an account or accessing MyHealth ("the Platform"), you explicitly consent to the collection, processing, and storage of your personal wellness records, prescriptions, and health documents as outlined in our Privacy Policy.</p>
-          <br/>
-          <h4>2. Health Information & Clinical Safety Notice</h4>
-          <p>MyHealth provides document storage, optical character recognition (OCR), adherence reminder tools, and encrypted record compilation. MyHealth does not provide medical advice, diagnosis, or emergency healthcare services.</p>
-          <br/>
-          <h4>3. Zero Data Commercialization</h4>
-          <p>We do not monetize, rent, or sell your personal identifiable information or protected health documents to advertisers, insurance providers, or third-party data brokers.</p>
-        `,
-        privacy: `
-          <h4>1. Health Data Protection Commitment</h4>
-          <p>We implement technical safeguards aligned with HIPAA security rules and the Indian Digital Personal Data Protection Act (DPDP Act). Your sensitive medical files and prescription images are encrypted both in transit (TLS 1.3) and at rest (AES-256).</p>
-          <br/>
-          <h4>2. Explicit Signup Consent</h4>
-          <p>Account creation requires mandatory, affirmative consent to process your health data strictly to power medication alarms, timeline compilation, and doctor report generation.</p>
-        `,
-        hipaa: `
-          <h4>HIPAA Security & Privacy Transparency</h4>
-          <p>MyHealth is engineered with end-to-end audit trails, tenant-isolated multi-factor authorization boundaries, SHA-256 cryptographic file checksums, and zero cross-patient IDOR exposure.</p>
-        `
-      };
+<section class="sec tight" aria-labelledby="next-title">
+  <div class="wrap">
+    <p class="ov">Coming next</p>
+    <h2 id="next-title">What we’re building now</h2>
+    <p class="sl">These aren’t in the app yet. We’ll add them one at a time, after testing.</p>
+    <div class="g4">
+      <div class="card soon"><div class="ic mb"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg></div><div><h3 class="ct">Sign in with WhatsApp</h3><p class="cb">A code on WhatsApp, no password</p></div></div>
+      <div class="card soon"><div class="ic ms"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></div><div><h3 class="ct">Health profile</h3><p class="cb">Allergies, blood group and more</p></div></div>
+      <div class="card soon"><div class="ic mb"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0112 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10 21a2 2 0 004 0"/></svg></div><div><h3 class="ct">Reminders</h3><p class="cb">A nudge when a dose is due</p></div></div>
+      <div class="card soon"><div class="ic ms"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><circle cx="17" cy="9.5" r="2.5"/><path d="M2.5 20c.8-3.6 3.3-5.5 6.5-5.5s5.7 1.9 6.5 5.5M15 14.6c3.2-.4 5.6 1.4 6.5 4.9"/></svg></div><div><h3 class="ct">Family</h3><p class="cb">Look after a parent’s medicines</p></div></div>
+    </div>
+  </div>
+</section>
 
-      function openLegalModal(type) {
-        document.getElementById('legal-modal-heading').innerText = type === 'terms' ? 'Terms of Service' : type === 'privacy' ? 'Health Data Privacy Policy' : 'HIPAA Transparency';
-        document.getElementById('legal-modal-body').innerHTML = legalTexts[type] || legalTexts.terms;
-        document.getElementById('legal-modal').classList.add('open');
-      }
+<section class="sec tight" id="privacy" aria-labelledby="privacy-title">
+  <div class="wrap">
+    <p class="ov">Privacy</p>
+    <h2 id="privacy-title">Your health information, in plain words</h2>
+    <div class="g3">
+      <div class="card"><div class="ic mb"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4"/><rect x="3" y="4" width="18" height="16" rx="4"/></svg></div><h3 class="ct">You decide what’s saved</h3><p class="cb">When Ayoreni reads a prescription, it shows you a draft first. Only what you confirm goes into your records.</p></div>
+      <div class="card"><div class="ic ms"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M9 13h6"/></svg></div><h3 class="ct">How a prescription is read</h3><p class="cb">To read a prescription, Ayoreni processes the photo on our servers. Your documents stay private to your account.</p></div>
+      <div class="card"><div class="ic mb"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></div><h3 class="ct">No ads. We don’t sell your data.</h3><p class="cb">Ayoreni has no advertising, and your health information is never sold.</p></div>
+      <!-- "Where your data is kept" card: removed until the owner confirms the hosting wording (landing brief, task 2). Add it back as a fourth card, and switch this grid to g2, once it is confirmed. -->
+    </div>
+  </div>
+</section>
 
-      function closeLegalModal() {
-        document.getElementById('legal-modal').classList.remove('open');
-      }
-    </script>
-  </body>
+<section class="sec tight" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div class="contact">
+      <div class="cx"><h2 id="contact-title">Questions about Ayoreni?</h2><p>Write to us about the app, the early Android version or your data.</p></div>
+      <a class="mail" href="mailto:ayoreni.tech@gmail.com"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>ayoreni.tech@gmail.com</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="wrap">
+  <footer class="foot">
+    <div class="brand"><img src="assets/ayoreni-mark.svg" alt="" width="32" height="23">AYORENI</div>
+    <p>Ayoreni helps you keep track of your health. It doesn’t replace your doctor’s advice.</p>
+    <p>© 2026 Ayoreni</p>
+  </footer>
+</div>
+</body>
 </html>
